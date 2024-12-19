@@ -13,9 +13,9 @@ class Figure:
             if color[0] in range(0,256) and color[1] in range(0,256) and color[2] in range(0,256):
                 return color, True
             else:
-                return self.__color, False
+                return [0, 0, 0]
         else:
-            return 'Error', False
+            return [0, 0, 0]
 
     def set_color(self,*color):
         self.__color = self.__is_valid_color(color)[0]
